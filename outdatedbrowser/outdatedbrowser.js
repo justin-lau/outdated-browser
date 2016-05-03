@@ -5,7 +5,9 @@ author:     Burocratik
 website:    http://www.burocratik.com
 * @preserve
 -----------------------------------------------------------------------*/
-var outdatedBrowser = function(options) {
+
+var exports = window || exports;
+var outdatedBrowser = exports.outdatedBrowser = function(options) {
 
     //Variable definition (before ajax)
     var outdated = document.getElementById("outdated");
